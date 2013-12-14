@@ -9,8 +9,22 @@ namespace UnitTestProject1
         [TestMethod]
         public void isEquilateralTest()
         {
-            Triangle triangle = new Triangle(3.0, 3.0, 3.0);
-            Assert.IsTrue(triangle.isEquilateral());
+            Triangle tri = new Triangle(1.0, 1.0, 1.0);
+            Assert.IsTrue(tri.isEquilateral());
+        }
+
+        [TestMethod]
+        public void isIsoscelesTest()
+        {
+            Triangle tri = new Triangle(2.0, 3.0, 3.0);
+            Assert.IsTrue(tri.isIsosceles());
+        }
+
+        [TestMethod]
+        public void isScaleneTest()
+        {
+            Triangle tri = new Triangle(2.0, 3.0, 4.0);
+            Assert.IsTrue(tri.isScalene());
         }
     }
 }
